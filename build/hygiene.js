@@ -9,7 +9,8 @@ const VinylFile = require('vinyl');
 const vfs = require('vinyl-fs');
 const path = require('path');
 const fs = require('fs');
-const pall = require('p-all');
+const pall = (...args) => import('p-all').then(({ default: pall }) => pall(...args));
+//const pall = require('p-all');
 const { all, copyrightFilter, unicodeFilter, indentationFilter, tsFormattingFilter, eslintFilter } = require('./filters');
 
 const copyrightHeaderLines = [
