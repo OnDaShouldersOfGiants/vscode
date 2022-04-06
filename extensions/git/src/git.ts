@@ -130,7 +130,7 @@ function findSystemGitWin32(base: string, onValidate: (path: string) => boolean)
 }
 
 function findGitWin32InPath(onValidate: (path: string) => boolean): Promise<IGit> {
-	const whichPromise = new Promise<string>((c, e) => which('git.exe', (err, path) => err ? e(err) : c(path)));
+	const whichPromise = new Promise<string>((c, e) => which('git.exe', (err, path) => err ? e(err) : c(path!)));
 	return whichPromise.then(path => findSpecificGit(path, onValidate));
 }
 
@@ -1076,7 +1076,7 @@ export class Repository {
 		}
 
 		if (!isText) {
-			const result = filetype(buffer);
+			const result = await filetype.fileTypeFromBuffer(buffer);
 
 			if (!result) {
 				return { mimetype: 'application/octet-stream' };
