@@ -42,7 +42,11 @@
   },
   "devDependencies": {
     "@types/node": "17.x",
+<<<<<<< HEAD
     "@types/semver": "^7.3.9"
+=======
+    "@types/semver": "^5.5.0"
+>>>>>>> e1578ebb626 (bump node to 17.8.0)
   },
   "scripts": {
     "vscode:prepublish": "node ../../node_modules/gulp/bin/gulp.js --gulpfile ../../build/gulpfile.extensions.js compile-extension:typescript-language-features",

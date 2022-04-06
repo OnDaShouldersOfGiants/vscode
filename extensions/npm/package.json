@@ -27,9 +27,15 @@
     "which-pm": "^2.0.0"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "@types/minimatch": "^3.0.5",
     "@types/node": "17.x",
     "@types/which": "^2.0.1"
+=======
+    "@types/minimatch": "^3.0.3",
+    "@types/node": "17.x",
+    "@types/which": "^2.0.0"
+>>>>>>> e1578ebb626 (bump node to 17.8.0)
   },
   "resolutions": {
     "which-pm/load-yaml-file/**/argparse": "1.0.9"
