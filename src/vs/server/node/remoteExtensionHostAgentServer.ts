@@ -106,14 +106,16 @@ export class RemoteExtensionHostAgentServer extends Disposable implements IServe
 		// Version
 		if (pathname === '/version') {
 			res.writeHead(200, { 'Content-Type': 'text/plain' });
-			return res.end(this._productService.commit || '');
+			res.end(this._productService.commit || '');
+			return;
 		}
 
 		// Delay shutdown
 		if (pathname === '/delay-shutdown') {
 			this._delayShutdown();
 			res.writeHead(200);
-			return res.end('OK');
+			res.end('OK');
+			return;
 		}
 
 		if (!httpRequestHasValidConnectionToken(this._connectionToken, req, parsedUrl)) {
@@ -162,7 +164,7 @@ export class RemoteExtensionHostAgentServer extends Disposable implements IServe
 		}
 
 		res.writeHead(404, { 'Content-Type': 'text/plain' });
-		return res.end('Not found');
+		res.end('Not found');
 	}
 
 	public handleUpgrade(req: http.IncomingMessage, socket: net.Socket) {
