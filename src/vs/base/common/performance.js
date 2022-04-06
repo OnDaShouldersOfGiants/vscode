@@ -41,7 +41,7 @@
 	function _define() {
 
 		// Identify browser environment when following property is not present
-		// https://nodejs.org/dist/latest-v16.x/docs/api/perf_hooks.html#performancenodetiming
+		// https://nodejs.org/dist/latest-v17.x/docs/api/perf_hooks.html#performancenodetiming
 		if (typeof performance === 'object' && typeof performance.mark === 'function' && !performance.nodeTiming) {
 			// in a browser context, reuse performance-util
 

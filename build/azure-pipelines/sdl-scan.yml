@@ -47,7 +47,7 @@ stages:
               outputFormat: "pre"
           - task: NodeTool@0
             inputs:
-              versionSpec: "16.x"
+              versionSpec: "17.x"
 
           - task: AzureKeyVault@1
             displayName: "Azure Key Vault: Get Secrets"
@@ -148,7 +148,7 @@ stages:
               toolMajorVersion: "V2"
           - task: NodeTool@0
             inputs:
-              versionSpec: "16.x"
+              versionSpec: "17.x"
 
           - task: AzureKeyVault@1
             displayName: "Azure Key Vault: Get Secrets"

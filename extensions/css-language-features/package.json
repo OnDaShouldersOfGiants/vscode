@@ -336,7 +336,10 @@
             "type": "string",
             "scope": "resource",
             "default": "collapse",
-            "enum": ["collapse", "expand"],
+            "enum": [
+              "collapse",
+              "expand"
+            ],
             "markdownDescription": "%css.format.braceStyle.desc%"
           },
           "css.format.preserveNewLines": {
@@ -638,7 +641,10 @@
             "type": "string",
             "scope": "resource",
             "default": "collapse",
-            "enum": ["collapse", "expand"],
+            "enum": [
+              "collapse",
+              "expand"
+            ],
             "markdownDescription": "%scss.format.braceStyle.desc%"
           },
           "scss.format.preserveNewLines": {
@@ -941,7 +947,10 @@
             "type": "string",
             "scope": "resource",
             "default": "collapse",
-            "enum": ["collapse", "expand"],
+            "enum": [
+              "collapse",
+              "expand"
+            ],
             "markdownDescription": "%less.format.braceStyle.desc%"
           },
           "less.format.preserveNewLines": {
@@ -990,7 +999,7 @@
     "vscode-uri": "^3.0.3"
   },
   "devDependencies": {
-    "@types/node": "16.x"
+    "@types/node": "17.x"
   },
   "repository": {
     "type": "git",

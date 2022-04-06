@@ -8,7 +8,7 @@
   "engines": {
     "vscode": "0.10.x"
   },
-	"categories": [
+  "categories": [
     "Other"
   ],
   "activationEvents": [
@@ -102,7 +102,7 @@
     "vscode-nls": "^4.0.0"
   },
   "devDependencies": {
-    "@types/node": "16.x"
+    "@types/node": "17.x"
   },
   "repository": {
     "type": "git",

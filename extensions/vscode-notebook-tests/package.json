@@ -33,7 +33,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@types/node": "16.x"
+    "@types/node": "17.x"
   },
   "contributes": {
     "commands": [
