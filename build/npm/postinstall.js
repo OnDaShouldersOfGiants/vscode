@@ -26,6 +26,8 @@ function yarnInstall(location, opts) {
 		delete opts.ignoreEngines;
 	}
 
+	args.push('--flat');
+
 	console.log(`Installing dependencies in ${location}...`);
 	console.log(`$ yarn ${args.join(' ')}`);
 	const result = cp.spawnSync(yarn, args, opts);
