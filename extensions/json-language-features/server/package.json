@@ -19,7 +19,7 @@
     "vscode-uri": "^3.0.3"
   },
   "devDependencies": {
-    "@types/mocha": "^8.2.0",
+    "@types/mocha": "^9.1.0",
     "@types/node": "17.x"
   },
   "scripts": {

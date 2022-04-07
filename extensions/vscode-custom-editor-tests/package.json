@@ -18,10 +18,10 @@
     "vscode:prepublish": "node ../../node_modules/gulp/bin/gulp.js --gulpfile ../../build/gulpfile.extensions.js compile-extension:vscode-notebook-tests ./tsconfig.json"
   },
   "dependencies": {
-    "p-limit": "^3.0.2"
+    "p-limit": "^4.0.0"
   },
   "devDependencies": {
-    "@types/mocha": "^8.2.0",
+    "@types/mocha": "^9.1.0",
     "@types/node": "17.x",
     "@types/p-limit": "^2.2.0"
   },

@@ -99,7 +99,7 @@
     ]
   },
   "dependencies": {
-    "vscode-nls": ">=4.0.0"
+    "vscode-nls": ">=5.0.0"
   },
   "devDependencies": {
     "@types/node": "17.x"
