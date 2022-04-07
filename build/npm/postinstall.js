@@ -29,7 +29,7 @@ function yarnInstall(location, opts) {
 	args.push('--flat');
 
 	console.log(`Installing dependencies in ${location}...`);
-	console.log(`$ yarn ${args.join(' ')}`);
+	console.log(`$ yarn --flat ${args.join(' ')}`);
 	const result = cp.spawnSync(yarn, args, opts);
 
 	if (result.error || result.status !== 0) {
